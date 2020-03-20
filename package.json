@@ -1,0 +1,30 @@
+{
+  "name": "sameti-dev",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Mostafa Sameti Personal Website",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Mostafa Sameti <mos.sameti@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.20.2",
+    "gatsby-plugin-sass": "^2.2.0",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
