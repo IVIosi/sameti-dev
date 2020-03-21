@@ -1,0 +1,43 @@
+.navbar {
+  width: 2%;
+  margin: 0 1.25%;
+
+  &__item {
+    position: relative;
+    margin-bottom: 10px;
+
+    &-icon {
+      color: $color-black;
+      width: 20px;
+    }
+
+    &-tooltip {
+      position: absolute;
+      top: 0;
+      left: 30px;
+      visibility: hidden;
+      background-color: $color-white;
+      color: $color-black;
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 5px;
+      z-index: 1;
+      box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent $color-white transparent transparent;
+      }
+    }
+
+    &:hover .navbar__item-tooltip {
+      visibility: visible;
+    }
+  }
+}
