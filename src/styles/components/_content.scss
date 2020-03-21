@@ -1,5 +1,5 @@
 .content {
-  width: 55%;
+  width: 50%;
   background-color: $color-white;
   padding: 3rem;
 
@@ -20,6 +20,8 @@
 
   hr {
     border-top: 1px solid $color-gray;
+    opacity: 0.3;
     border-radius: 5px;
+    margin: 2rem 0;
   }
 }
