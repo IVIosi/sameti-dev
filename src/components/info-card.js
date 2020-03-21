@@ -44,13 +44,14 @@ export default function InfoCard({ gravatar }) {
         </div>
         <p className="info-card__name bold">Mostafa Sameti</p>
         <p className="info-card__job">Front-end Developer</p>
-        <ul className="info-card__social">
+        <ul className="info-card__social-list">
           {socials.map(item => {
             const IconName = item.logo
             return (
-              <li key={item.name} title={item.name}>
+              <li className="info-card__social-item" key={item.name}>
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <IconName className="info-card__social-icon" />
+                  <IconName className="info-card__social-item-icon" />
+                  <div className="info-card__social-item-tooltip">{item.name}</div>
                 </a>
               </li>
             )
