@@ -1,4 +1,5 @@
 import React, { Fragment } from "react"
+import SEO from "./SEO"
 
 import "../styles/main.scss"
 import InfoCard from "./info-card"
@@ -8,6 +9,7 @@ import Navigation from "./navigation"
 export default function Layout({ children }) {
   return (
     <Fragment>
+      <SEO />
       <div className="polygon polygon-left" />
       <div className="polygon polygon-right" />
       <main className="main">
