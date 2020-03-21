@@ -1,0 +1,40 @@
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $primary-color;
+  padding: 1rem;
+  width: 15%;
+  height: 100%;
+  margin: 0 2.1%;
+  box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+
+  &__avatar {
+    margin: 1rem 0;
+    img {
+      width: 70%;
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    font-size: 1.38rem;
+    margin-bottom: 1rem;
+  }
+  &__job {
+    color: #69797b;
+    margin-bottom: 1rem;
+  }
+  &__social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #69797b;
+
+    &-icon {
+      color: $color-black;
+      height: 15px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.content {
+  width: 55%;
+  background-color: $color-white;
+  padding: 3rem;
+
+  &__main-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  &__subtitle {
+    font-size: 1.2rem;
+    color: $color-gray;
+    margin: 1rem 0;
+  }
+  &__text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    border-top: 1px solid $color-gray;
+    border-radius: 5px;
+  }
+}

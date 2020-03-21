@@ -1,0 +1,49 @@
+body {
+  font-family: $fontFamily;
+  font-size: 13px;
+  background-color: $primary-background-color;
+}
+
+.polygon {
+  position: absolute;
+  z-index: $background-z-index;
+
+  &-right {
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 200px 250px 0;
+    border-color: transparent $primary-color transparent transparent;
+  }
+  &-left {
+    top: 90px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 250px 0 40px 250px;
+    border-color: transparent transparent transparent #e2e2e2;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 80px 0;
+  justify-content: center;
+}
+
+.navbar {
+  width: 2%;
+  margin: 0 1.25%;
+}
+
+.footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+}
