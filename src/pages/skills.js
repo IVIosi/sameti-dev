@@ -13,6 +13,7 @@ export default function IndexPage() {
           <p className="bold">CSS3</p>
           <p className="bold">HTML5</p>
           <p className="bold">TypeScript</p>
+          <hr />
           <h2 className="content__subtitle">Web Development Technologies:</h2>
           <p className="bold">React</p>
           <p className="bold">Redux</p>
@@ -25,6 +26,7 @@ export default function IndexPage() {
           <p className="bold">Babel</p>
           <p className="bold">Sass</p>
           <p className="bold">Styled Components</p>
+          <hr />
           <h2 className="content__subtitle">Others:</h2>
           <p className="bold">Git</p>
           <p className="bold">Git Flow</p>
