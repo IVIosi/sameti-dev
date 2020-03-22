@@ -1,5 +1,8 @@
 .navbar {
   width: 2%;
+  top: 10px;
+  position: sticky;
+  height: 100%;
   margin: 0 1.25%;
 
   &__item {
@@ -23,6 +26,11 @@
       border-radius: 5px;
       z-index: 1;
       box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+      @include mq_max($big) {
+        left: auto;
+        right: 30px;
+        box-shadow: 4px 0 15px 1px rgba(118, 95, 91, 0.34);
+      }
 
       &:after {
         content: " ";
@@ -33,6 +41,11 @@
         border-width: 5px;
         border-style: solid;
         border-color: transparent $color-white transparent transparent;
+        @include mq_max($big) {
+          left: 100%;
+          right: auto;
+          border-color: transparent transparent transparent $color-white;
+        }
       }
     }
 

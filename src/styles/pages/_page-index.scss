@@ -5,7 +5,7 @@ body {
 }
 
 .polygon {
-  position: absolute;
+  position: fixed;
   z-index: $background-z-index;
 
   &-right {
@@ -34,6 +34,9 @@ body {
   flex-wrap: nowrap;
   margin: 80px 0;
   justify-content: center;
+  @include mq_max($medium) {
+    flex-wrap: wrap;
+  }
 }
 
 .footer {

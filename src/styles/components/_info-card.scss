@@ -9,6 +9,12 @@
   height: 100%;
   margin: 0 2.1%;
   box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+  @include mq_max($medium) {
+    display: inline-flex;
+    width: 64%;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
   &__avatar {
     margin: 1rem 0;
