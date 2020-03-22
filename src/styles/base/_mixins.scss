@@ -1,16 +1,21 @@
 //==============================
 //Media Queries :START
 //==============================
-@mixin mq_max($width){
-    @media only screen and (max-width: $width){@content;}
+@mixin mq_max($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
 }
-@mixin mq_min($width){
-    @media only screen and (min-width: $width + 1){@content;}
+@mixin mq_min($width) {
+  @media only screen and (min-width: $width + 1) {
+    @content;
+  }
 }
-@mixin mq_min_to_max($min_width,$max_width){
-    @media only screen and (min-width: $min_width) and (max-width: $max_width){@content;}
+@mixin mq_min_to_max($min_width, $max_width) {
+  @media only screen and (min-width: $min_width) and (max-width: $max_width) {
+    @content;
+  }
 }
 //==============================
 //Media Queries :END
 //==============================
-  
