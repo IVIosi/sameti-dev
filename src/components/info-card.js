@@ -10,7 +10,7 @@ export default function InfoCard({ gravatar }) {
     {
       name: "Medium",
       logo: MediumIcon,
-      link: "",
+      link: "https://medium.com/@IVIosi",
     },
     {
       name: "LinkedIn",
