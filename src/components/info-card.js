@@ -1,9 +1,11 @@
 import React from "react"
+
 import MediumIcon from "../static/medium.svg"
 import GithubIcon from "../static/github.svg"
 import TwitterIcon from "../static/twitter.svg"
 import MailIcon from "../static/mail.svg"
 import LinkedinIcon from "../static/linkedin.svg"
+import StackOverflowIcon from "../static/stackoverflow.svg"
 
 export default function InfoCard({ gravatar }) {
   const socials = [
@@ -26,6 +28,11 @@ export default function InfoCard({ gravatar }) {
       name: "Twitter",
       logo: TwitterIcon,
       link: "https://twitter.com/mostafa_sameti",
+    },
+    {
+      name: "Stack Overflow",
+      logo: StackOverflowIcon,
+      link: "https://stackoverflow.com/users/5354147/iviosi",
     },
     {
       name: "GitHub",
