@@ -36,27 +36,29 @@ export default function InfoCard({ gravatar }) {
 
   return (
     <aside className="info-card">
-        <div className="info-card__avatar">
-          <img
-            src={`https://www.gravatar.com/avatar/${gravatar}?s=100`}
-            alt="Mostafa"
-          />
-        </div>
-        <p className="info-card__name bold">Mostafa Sameti</p>
-        <p className="info-card__job">Front-end Developer</p>
-        <ul className="info-card__social-list">
-          {socials.map(item => {
-            const IconName = item.logo
-            return (
-              <li className="info-card__social-item" key={item.name}>
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <IconName className="info-card__social-item-icon" />
-                  <div className="info-card__social-item-tooltip">{item.name}</div>
-                </a>
-              </li>
-            )
-          })}
-        </ul>
+      <div className="info-card__avatar">
+        <img
+          src={`https://www.gravatar.com/avatar/${gravatar}?s=200`}
+          alt="Mostafa"
+        />
+      </div>
+      <p className="info-card__name bold">Mostafa Sameti</p>
+      <p className="info-card__job">Front-end Developer</p>
+      <ul className="info-card__social-list">
+        {socials.map(item => {
+          const IconName = item.logo
+          return (
+            <li className="info-card__social-item" key={item.name}>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <IconName className="info-card__social-item-icon" />
+                <div className="info-card__social-item-tooltip">
+                  {item.name}
+                </div>
+              </a>
+            </li>
+          )
+        })}
+      </ul>
     </aside>
   )
 }
