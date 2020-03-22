@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12425546-7cc3-4e17-829f-ed07f95cf8c3/deploy-status)](https://app.netlify.com/sites/musing-lalande-4d3668/deploys)
 ## 🚀 Quick start
 
 1.  **Clone repository.**
@@ -48,8 +49,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 5.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-6. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+6.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-7. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+7.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-8. **`README.md`**: A text file containing useful reference information about your project.
+8.  **`README.md`**: A text file containing useful reference information about your project.
