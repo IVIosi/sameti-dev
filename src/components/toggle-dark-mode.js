@@ -3,7 +3,7 @@ import React from "react"
 import MoonIcon from "../static/moon.svg"
 import SunIcon from "../static/sun.svg"
 
-export default  class ToggleDarkMode extends React.Component {
+export default class ToggleDarkMode extends React.Component {
   constructor(props) {
     super(props)
 
@@ -18,7 +18,7 @@ export default  class ToggleDarkMode extends React.Component {
     const localTheme = localStorage.getItem("theme")
     if (localTheme) {
       this.setState({
-        theme: localTheme
+        theme: localTheme,
       })
       document.querySelector("body").setAttribute("class", localTheme)
     } else {
@@ -29,7 +29,7 @@ export default  class ToggleDarkMode extends React.Component {
   handleToggle(e) {
     const newTheme = e.target.checked ? "dark" : "light"
     this.setState({
-      theme: newTheme
+      theme: newTheme,
     })
     localStorage.setItem("theme", newTheme)
     document.querySelector("body").setAttribute("class", newTheme)
@@ -45,10 +45,10 @@ export default  class ToggleDarkMode extends React.Component {
         <input
           checked={this.state.theme === "dark"}
           type="checkbox"
-          onChange={(e) => this.handleToggle(e)}
+          onChange={e => this.handleToggle(e)}
         />
         <span className="switch__slider" />
       </label>
     )
-  } 
+  }
 }

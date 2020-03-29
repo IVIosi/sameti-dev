@@ -13,7 +13,7 @@ $offset: 3px;
     width: 0;
     height: 0;
 
-    &:checked + .switch__slider{
+    &:checked + .switch__slider {
       background-color: var(--primary-background-color);
     }
     &:focus + .switch__slider {
@@ -33,10 +33,10 @@ $offset: 3px;
     right: 0;
     bottom: 0;
     background-color: var(--primary-background-color);
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
     border-radius: $size;
-  
+
     &:before {
       position: absolute;
       content: "";
@@ -45,8 +45,8 @@ $offset: 3px;
       left: $offset;
       bottom: $offset;
       background-color: var(--main-text-color);
-      -webkit-transition: .4s;
-      transition: .4s;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
       border-radius: 50%;
     }
   }
