@@ -1,8 +1,6 @@
 import React from "react"
 import useEventListener from "../components/useEventListener"
 
-import "../styles/main.scss"
-
 export default function IndexPage() {
   useEventListener("mousemove", event => {
     let pageX = document.body.clientWidth

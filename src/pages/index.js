@@ -1,6 +1,5 @@
 import React from "react"
 
-import "../styles/main.scss"
 import Layout from "../components/layout"
 
 export default function IndexPage() {
