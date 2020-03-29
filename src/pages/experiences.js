@@ -1,7 +1,5 @@
 import React from "react"
 
-import Layout from "../components/layout"
-
 export default function IndexPage() {
   const experiences = [
     {
@@ -60,56 +58,54 @@ export default function IndexPage() {
   ]
 
   return (
-    <Layout>
-      <section className="content">
-        <h1 className="content__main-title bold">WORK EXPERIENCES</h1>
-        <ul>
-          {experiences.map(item => (
-            <li className="experience">
-              <div className="experience__date">
-                <span className="experience__date-badge">
-                  {item.start.month}
-                  <time className="bold">{item.start.year}</time>
-                  {` - `}
-                  {item.end.month}
-                  <time className="bold">{item.end.year}</time>
-                </span>
-              </div>
-              <div className="experience__details">
-                <h3 className="experience__details-title bold">{item.title}</h3>
-                <h4 className="experience__details-company">{item.company}</h4>
-                <p className="experience__details-description">
-                  {item.description}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <hr />
-        <h1 className="content__main-title bold">EDUCATION</h1>
-        <ul>
+    <section className="content">
+      <h1 className="content__main-title bold">WORK EXPERIENCES</h1>
+      <ul>
+        {experiences.map(item => (
           <li className="experience">
             <div className="experience__date">
               <span className="experience__date-badge">
-                SEP
-                <time className="bold">2013</time>
+                {item.start.month}
+                <time className="bold">{item.start.year}</time>
                 {` - `}
-                JAN
-                <time className="bold">2018</time>
+                {item.end.month}
+                <time className="bold">{item.end.year}</time>
               </span>
             </div>
             <div className="experience__details">
-              <h3 className="experience__details-title bold">
-                Bachelor of Software Engineering
-              </h3>
-              <h4 className="experience__details-company">
-                University of Tehran
-              </h4>
-              <p className="experience__details-description">never done!</p>
+              <h3 className="experience__details-title bold">{item.title}</h3>
+              <h4 className="experience__details-company">{item.company}</h4>
+              <p className="experience__details-description">
+                {item.description}
+              </p>
             </div>
           </li>
-        </ul>
-      </section>
-    </Layout>
+        ))}
+      </ul>
+      <hr />
+      <h1 className="content__main-title bold">EDUCATION</h1>
+      <ul>
+        <li className="experience">
+          <div className="experience__date">
+            <span className="experience__date-badge">
+              SEP
+              <time className="bold">2013</time>
+              {` - `}
+              JAN
+              <time className="bold">2018</time>
+            </span>
+          </div>
+          <div className="experience__details">
+            <h3 className="experience__details-title bold">
+              Bachelor of Software Engineering
+            </h3>
+            <h4 className="experience__details-company">
+              University of Tehran
+            </h4>
+            <p className="experience__details-description">never done!</p>
+          </div>
+        </li>
+      </ul>
+    </section>
   )
 }
