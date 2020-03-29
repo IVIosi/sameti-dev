@@ -1,6 +1,6 @@
 .content {
   width: 50%;
-  background-color: $color-white;
+  background-color: var(--main-text-background);
   padding: 3rem;
 
   &__main-title {
@@ -9,7 +9,7 @@
   }
   &__subtitle {
     font-size: 1.2rem;
-    color: $color-gray;
+    opacity: 0.65;
     margin: 1rem 0;
   }
   &__text {
@@ -20,7 +20,7 @@
 }
 
 hr {
-  border-top: 1px solid $color-gray;
+  border-top: 1px solid var(--minor-text-color);
   opacity: 0.3;
   border-radius: 5px;
   margin: 2rem 0;
@@ -46,7 +46,7 @@ hr {
 
     &-badge {
       position: relative;
-      background-color: $primary-color;
+      background-color: var(--primary-color);
       padding: 0.3rem 0.8rem;
 
       &:after {
@@ -57,7 +57,7 @@ hr {
         margin-top: -0.8rem;
         border-width: 0.8rem;
         border-style: solid;
-        border-color: transparent transparent transparent $primary-color;
+        border-color: transparent transparent transparent var(--primary-color);
       }
     }
   }
@@ -73,7 +73,7 @@ hr {
       margin-bottom: 0.8rem;
     }
     &-company {
-      color: $color-gray;
+      opacity: 0.65;
       margin-bottom: 0.8rem;
     }
     &-description {

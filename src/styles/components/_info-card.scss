@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   padding: 1rem;
   width: 15%;
   height: 100%;
   margin: 0 2.1%;
-  box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+  box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
   @include mq_max($medium) {
     display: inline-flex;
     width: 64%;
@@ -27,7 +27,7 @@
     margin-bottom: 1rem;
   }
   &__job {
-    color: #69797b;
+    opacity: 0.65;
     margin-bottom: 1rem;
   }
   &__social {
@@ -43,7 +43,7 @@
       position: relative;
 
       &-icon {
-        color: $color-black;
+        color: var(--main-text-color);
         height: 17px;
         margin: 0 2px;
       }
@@ -54,13 +54,13 @@
         left: 50%;
         transform: translateX(-50%);
         visibility: hidden;
-        background-color: $color-white;
-        color: $color-black;
+        background-color: var(--main-text-background);
+        color: var(--main-text-color);
         text-align: center;
         padding: 5px 10px;
         border-radius: 5px;
         z-index: 1;
-        box-shadow: -4px 7px 15px 1px rgba(118, 95, 91, 0.34);
+        box-shadow: -4px 7px 15px 1px rgba(0, 0, 0, 0.2);
 
         &:after {
           content: " ";
@@ -70,7 +70,7 @@
           margin-left: -5px;
           border-width: 5px;
           border-style: solid;
-          border-color: $color-white transparent transparent transparent;
+          border-color: var(--main-text-background) transparent transparent transparent;
         }
       }
 
