@@ -1,11 +1,12 @@
 //variables
 $t-purple: #8c8aa7;
 $pink: #ff5e65;
+$main-color: #c0e3e7;
 
 .box {
   width: 100vw;
   height: 100vh;
-  background: $primary-color;
+  background: $main-color;
   padding: 30px 50px;
 
   .box__ghost {
@@ -150,7 +151,7 @@ $pink: #ff5e65;
         .box__eye-left {
           width: 12px;
           height: 12px;
-          background: $primary-color;
+          background: $main-color;
           border-radius: 50%;
           margin: 0 10px;
           position: absolute;
@@ -159,7 +160,7 @@ $pink: #ff5e65;
         .box__eye-right {
           width: 12px;
           height: 12px;
-          background: $primary-color;
+          background: $main-color;
           border-radius: 50%;
           margin: 0 10px;
           position: absolute;
@@ -185,7 +186,7 @@ $pink: #ff5e65;
           &:nth-child(2n) {
             top: -12px;
             margin: 0 -0px;
-            border-top: 15px solid $primary-color;
+            border-top: 15px solid $main-color;
             background: transparent;
           }
         }
