@@ -5,11 +5,13 @@ import "../styles/main.scss"
 import InfoCard from "./info-card"
 import Copyright from "./copyright"
 import Navigation from "./navigation"
+import ToggleDarkMode from "./toggle-dark-mode"
 
 export default function Layout({ children }) {
   return (
     <Fragment>
       <SEO />
+      <ToggleDarkMode />
       <div className="polygon polygon-left" />
       <div className="polygon polygon-right" />
       <main className="main">
