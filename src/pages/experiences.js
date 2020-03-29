@@ -62,7 +62,7 @@ export default function IndexPage() {
       <h1 className="content__main-title bold">WORK EXPERIENCES</h1>
       <ul>
         {experiences.map(item => (
-          <li className="experience">
+          <li className="experience" key={item.company}>
             <div className="experience__date">
               <span className="experience__date-badge">
                 {item.start.month}
