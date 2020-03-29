@@ -7,7 +7,10 @@ import Copyright from "./copyright"
 import Navigation from "./navigation"
 import ToggleDarkMode from "./toggle-dark-mode"
 
-export default function Layout({ children }) {
+export default function Layout({ children, ...props }) {
+  if (props.pageResources.page.path === "/404.html") {
+    return <>{children}</>
+  }
   return (
     <Fragment>
       <SEO />
