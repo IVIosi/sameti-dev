@@ -1,11 +1,14 @@
+const website = require("./config/website")
+
 module.exports = {
   siteMetadata: {
-    title: `Mostafa Sameti - Front-end Developer`,
-    description: `Mostafa Sameti Personal Website`,
-    author: `Mostafa Sameti`,
-    url: "https://www.sameti.dev",
-    image: "/src/static/favicon.png",
-    twitterUsername: "@mostafa_sameti",
+    title: website.title,
+    description: website.description,
+    author: website.author,
+    url: website.url,
+    image: website.logo,
+    siteLanguage: website.siteLanguage,
+    twitterUsername: website.twitter,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -16,6 +19,19 @@ module.exports = {
         rule: {
           include: /static/,
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: website.title,
+        short_name: website.titleAlt,
+        description: website.description,
+        start_url: website.pathPrefix,
+        background_color: website.backgroundColor,
+        theme_color: website.themeColor,
+        display: "minimal-ui",
+        icon: website.favicon,
       },
     },
   ],
