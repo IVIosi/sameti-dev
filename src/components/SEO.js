@@ -14,6 +14,7 @@ export default function SEO({ title, description, image, pathname, article }) {
             defaultDescription,
             siteUrl,
             defaultImage,
+            siteLanguage,
             twitterUsername,
           },
         },
@@ -28,6 +29,7 @@ export default function SEO({ title, description, image, pathname, article }) {
         return (
           <>
             <Helmet title={seo.title}>
+              <html lang={siteLanguage} />
               <meta name="description" content={seo.description} />
               <meta name="image" content={seo.image} />
               {seo.url && <meta property="og:url" content={seo.url} />}
@@ -80,6 +82,7 @@ const query = graphql`
         defaultDescription: description
         siteUrl: url
         defaultImage: image
+        siteLanguage
         twitterUsername
       }
     }
