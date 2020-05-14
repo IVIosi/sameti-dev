@@ -35,7 +35,7 @@ export default function IndexPage() {
         <p>
           I’ve worked for myself my entire life. I’ve graduated of Universty of
           Tehran’s Electrical and Computer Enginering (ECE) school where I
-          obtained my Bachelor of software engineering.
+          obtained my Bachelor of electrical engineering.
         </p>
         <br />
         <p>

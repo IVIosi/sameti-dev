@@ -97,7 +97,7 @@ export default function IndexPage() {
           </div>
           <div className="experience__details">
             <h3 className="experience__details-title bold">
-              Bachelor of Software Engineering
+              Bachelor of Electrical Engineering
             </h3>
             <h4 className="experience__details-company">
               University of Tehran
