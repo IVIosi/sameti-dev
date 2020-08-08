@@ -8,7 +8,7 @@ export default function IndexPage() {
         <h2 className="bold">Hello, I'm Mostafa!</h2>
         <p>
           {`a front-end developer from Tehran, Iran. I've been creating on the
-              web for around 5 years and have become pretty good at it. I hang out
+              web for around 6 years and have become pretty good at it. I hang out
               on `}
           <a
             href="https://twitter.com/mostafa_sameti"
@@ -24,8 +24,7 @@ export default function IndexPage() {
       <div className="content__text">
         <h2 className="bold">A little more...</h2>
         <p>
-          I’m super passionate about design, development, and business. I’ve
-          been very fortunate to be able to do all three as a career. From a
+          I’m super passionate about design, development, and business. From a
           technical standpoint, I spend most of my time working with JavaScript,
           CSS3, HTML5. New and open source web technologies make me super
           excited and I can’t wait to see what is to come of the web in the next
@@ -33,15 +32,15 @@ export default function IndexPage() {
         </p>
         <br />
         <p>
-          I’ve worked for myself my entire life. I’ve graduated of Universty of
+          I’ve worked for several companies. I’ve graduated of Universty of
           Tehran’s Electrical and Computer Enginering (ECE) school where I
           obtained my Bachelor of electrical engineering.
         </p>
         <br />
         <p>
-          When not creating websites, I love to spend my time with my family and
-          friends. In my free time I play flamenco ,aka spanish, guitar. I'm
-          also a bookworm and obsessed with movies.
+          When not creating websites and web applications, I love to spend my time
+          with my family and friends. In my free time I play flamenco ,aka spanish,
+          guitar. I'm also a bookworm and obsessed with movies.
         </p>
         <br />
         <p>
