@@ -17,9 +17,9 @@ export default function IndexPage() {
         <p className="bold">Node JS</p>
         <p className="bold">Next JS</p>
         <p className="bold">Webpack</p>
-        <p className="bold">Material, Bootstrap, AntDesign</p>
+        <p className="bold">Material UI, Bootstrap, AntDesign</p>
         <p className="bold">Gatsby</p>
-        <p className="bold">Jest</p>
+        <p className="bold">Jest, RTL(React Testing Library), Cypress</p>
         <p className="bold">Babel</p>
         <p className="bold">Sass</p>
         <p className="bold">Styled Components</p>
