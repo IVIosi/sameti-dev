@@ -13,6 +13,7 @@ export default function IndexPage() {
       },
       title: "Senior Front-end Developer",
       company: "FANAP",
+      website: "https://fanap.ir/",
       description: `1 year - Fanap ICT is one of the largest IT
       companies in the middle east. It is also the leading company
       in Iran's IT market. I am working on Behnama (IP video
@@ -40,6 +41,7 @@ export default function IndexPage() {
       },
       title: "Front-end Developer",
       company: "Zhaket",
+      website: "https://zhaket.com/",
       description: `1 year & 2 months - Zhaket is the largest
       marketplace for website templates and plugins for Iranian
       developers and also, by far the market leader. similar to Envato`,
@@ -60,6 +62,7 @@ export default function IndexPage() {
       },
       title: "Front-end Developer",
       company: "ChiCheraa",
+      website: "https://chicheraa.com/",
       description: `1 year & 4 months - ChiCheraa is a start-up
       offering an AI-based guide for buying tech gadgets`,
       tasks: [
@@ -78,6 +81,7 @@ export default function IndexPage() {
       },
       title: "Front-end Developer",
       company: "Mava",
+      website: "https://mava.ir/",
       description: `2 years & 1 month - Mava is an Iranian
       e-commerce company providing educational tools for students`,
       tasks: [
@@ -96,6 +100,7 @@ export default function IndexPage() {
       },
       title: "Front-end Developer",
       company: "Freelance",
+      website: "/projects",
       description: `2 years & 4 months - As a freelance front-end
       developer, I worked on several projects with several companies`,
       tasks: [
@@ -104,7 +109,7 @@ export default function IndexPage() {
         "{robinaria.com} Law firm reservation system (HTML, CSS, Bootstrap, Vanilla JS)",
         "{parspalayesh.com} Industrial company website (HTML, CSS, Bootstrap, jQuery, Vanilla JS)",
         "{zirobamnews.com} Music news agency (HTML, CSS, Bootstrap, Vanilla JS, WordPress)",
-        "{jibimarket.com} E-commerce website (HTML, CSS, Bootstrap, Vanilla JS, OpenCart)"
+        "{jibimarket.com} E-commerce website (HTML, CSS, Bootstrap, Vanilla JS, OpenCart)",
       ],
     },
   ]
@@ -126,13 +131,17 @@ export default function IndexPage() {
             </div>
             <div className="experience__details">
               <h3 className="experience__details-title bold">{item.title}</h3>
-              <h4 className="experience__details-company">{item.company}</h4>
+              <h4 className="experience__details-company">
+                <a target="_blank" rel="noopener noreferrer" href={item.website}>{item.company}</a>
+              </h4>
               <p className="experience__details-description">
                 {item.description}
               </p>
               <ul className="experience__details-task-list">
                 {item.tasks.map(task => (
-                  <li className="experience__details-task">{task}</li>
+                  <li key={task} className="experience__details-task">
+                    {task}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -157,7 +166,7 @@ export default function IndexPage() {
               Bachelor of Science - Electrical Engineering
             </h3>
             <h4 className="experience__details-company">
-              University of Tehran
+              <a target="_blank" rel="noopener noreferrer" href="https://ut.ac.ir">University of Tehran</a>
             </h4>
             <p className="experience__details-description"></p>
           </div>
