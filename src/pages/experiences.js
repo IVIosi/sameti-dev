@@ -104,12 +104,12 @@ export default function IndexPage() {
       description: `2 years & 4 months - As a freelance front-end
       developer, I worked on several projects with several companies`,
       tasks: [
-        "{sotudehbeton.ir} Concrete plant website (HTML, CSS, Bootstrap, Vanilla JS, ES6+)",
-        "{guitarwsh.com} Music academy blog (HTML, CSS, Bootstrap, Vanilla JS, ES6+, WordPress)",
-        "{robinaria.com} Law firm reservation system (HTML, CSS, Bootstrap, Vanilla JS)",
-        "{parspalayesh.com} Industrial company website (HTML, CSS, Bootstrap, jQuery, Vanilla JS)",
-        "{zirobamnews.com} Music news agency (HTML, CSS, Bootstrap, Vanilla JS, WordPress)",
-        "{jibimarket.com} E-commerce website (HTML, CSS, Bootstrap, Vanilla JS, OpenCart)",
+        "Sotudehbeton.ir Concrete plant website (HTML, CSS, Bootstrap, Vanilla JS, ES6+)",
+        "Guitarwsh.com Music academy blog (HTML, CSS, Bootstrap, Vanilla JS, ES6+, WordPress)",
+        "Robinaria.com Law firm reservation system (HTML, CSS, Bootstrap, Vanilla JS)",
+        "Parspalayesh.com Industrial company website (HTML, CSS, Bootstrap, jQuery, Vanilla JS)",
+        "Zirobamnews.com Music news agency (HTML, CSS, Bootstrap, Vanilla JS, WordPress)",
+        "Jibimarket.com E-commerce website (HTML, CSS, Bootstrap, Vanilla JS, OpenCart)",
       ],
     },
   ]
