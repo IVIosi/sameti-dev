@@ -75,9 +75,24 @@ hr {
     &-company {
       opacity: 0.65;
       margin-bottom: 0.8rem;
+      & > a {
+        text-decoration: none;
+        &:hover {
+          color: var(--minor-text-color);
+        }
+      }
     }
     &-description {
       line-height: 1.2rem;
+      margin: 1rem 0;
+    }
+    &-task-list {
+      list-style-type: disc;
+      margin-left: 1rem;
+    }
+    &-task {
+      line-height: 1.2rem;
+      margin: 0.5rem 0;
     }
   }
 }

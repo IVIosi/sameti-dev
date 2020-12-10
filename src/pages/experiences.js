@@ -11,13 +11,24 @@ export default function IndexPage() {
         month: "Today",
         year: "",
       },
-      title: "Lead Front-end Developer",
+      title: "Senior Front-end Developer",
       company: "FANAP",
-      description: `7 months - I joined FANAP corporation (Biggest IT holding in country) as
-      senior front-end developer to help company with several products. My focus is on Behnama
-      (an app like GENETEC to manage surveillance cameras in buildings) front-end technologies.
-      I architect app using React, Redux, Material UI, and JSS. I also lead front-end team and
-      mentor junior developers.`,
+      website: "https://fanap.ir/",
+      description: `1 year - Fanap ICT is one of the largest IT
+      companies in the middle east. It is also the leading company
+      in Iran's IT market. I am working on Behnama (IP video
+      surveillance software, similar to Genetec) and Behkhan
+      (License plate recognition software)`,
+      tasks: [
+        "Architecting web application using TypeScript, React, Redux and JSS (CSS in JS)",
+        "Developing multilingual, international, and accessible application following i18n and a11y best practices",
+        "Improving code quality by adding unit and E2E tests and running them in CI (Continuous Integration) using Testing Library, Jest and Cypress",
+        "Reducing bundle size up to nearly 20% and improving performance around 10% with the help of React profiling tools and Chrome Lighthouse",
+        "Creating a WebRTC based live streaming player with custom controls",
+        "Efficiently delegating tasks, ensuring that software documentation is complete and accurate, and remediating group conflicts in an Agile team",
+        "Mentoring other front-end developers to learn best practices and trending technologies",
+        "Serving as a front-end consultant to the company’s other software teams (Behsima, Behkhan)",
+      ],
     },
     {
       start: {
@@ -30,15 +41,15 @@ export default function IndexPage() {
       },
       title: "Front-end Developer",
       company: "Zhaket",
-      description: `1 year 1 month - Zhaket is the biggest Wordpress 
-      plugins and themes marketplace in Iran. I'm working in Zhaket 
-      tech team as a front end developer. Our team trying to design 
-      and implement Zhaket new platform.
-      Technologies and frameworks used in client side stack consists 
-      of vast and different front end technologies, such as React JS, 
-      Next JS, Redux, Redux-saga, SASS.
-      Our team works based on Agile software development and follows 
-      SCRUM set of rules.`,
+      website: "https://zhaket.com/",
+      description: `1 year & 2 months - Zhaket is the largest
+      marketplace for website templates and plugins for Iranian
+      developers and also, by far the market leader. similar to Envato`,
+      tasks: [
+        "Developing responsive and SSR (server-side rendered) web application using JavaScript, Next JS, React, Redux, and Sass",
+        "Creating a new feature-rich WYSIWYG HTML editor which improved user satisfaction around 30% based on on-site surveys",
+        "Building a state of the art front-end framework and developing three different user interfaces for retailers, customers, and admins",
+      ],
     },
     {
       start: {
@@ -51,31 +62,32 @@ export default function IndexPage() {
       },
       title: "Front-end Developer",
       company: "ChiCheraa",
-      description: `1 year 3 months - ChiCheraa is a startup trying to 
-      make online shopping easier by using AI to provide suggestions on what
-      digital products you want to buy.
-      I was front-end developer and implemented website template based on 
-      designs by UX/UI designer.
-      I also developed ChiCheraa website as a single page web application 
-      powered by ReactJS.`,
+      website: "https://chicheraa.com/",
+      description: `1 year & 4 months - ChiCheraa is a start-up
+      offering an AI-based guide for buying tech gadgets`,
+      tasks: [
+        "Working closely with the design team to move towards a more Agile methodology by quickly prototyping application using TypeScript, Sass, React, and Redux",
+        "Developing PWA application as a team member within our process of writing user stories",
+      ],
     },
     {
       start: {
-        month: "AUG",
-        year: "2014",
+        month: "SEP",
+        year: "2015",
       },
       end: {
         month: "SEP",
         year: "2017",
       },
-      title: "Front-end Developer (Part Time)",
-      company: "Several...",
-      description: `3 years & 1 month - As my university education going to end,
-      I found my passion in front-end development. So I tried to find part-time jobs
-      and build my career around this subject. During this period I worked in several
-      companies as Front-end developer. Such as: Jibimarket.com (e-commerce website),
-      Guitaracademy.com (biggest guitar academy in country), Zirobamnews.com (Iran music
-      news agency) and mava.ir (educational website for elementary students).`,
+      title: "Front-end Developer",
+      company: "Mava",
+      website: "https://mava.ir/",
+      description: `2 years & 1 month - Mava is an Iranian
+      e-commerce company providing educational tools for students`,
+      tasks: [
+        "Implementing a new design system with the cooperation of the design team",
+        "Refactoring Mava.ir website which had been written by jQuery, Require JS, and Handlebars JS",
+      ],
     },
     {
       start: {
@@ -83,17 +95,22 @@ export default function IndexPage() {
         year: "2013",
       },
       end: {
-        month: "AUG",
-        year: "2014",
+        month: "SEP",
+        year: "2015",
       },
-      title: "Web Designer & Developer",
+      title: "Front-end Developer",
       company: "Freelance",
-      description: `1 year & 2 months - Start my journey in web development, 
-      alongside studying electrical engineering at university of Tehran.
-      I designed and implemented several corporate and educational websites.
-      During this period I developed my skills in HTML, CSS, some CMSs
-      (Wordpress, Opencart and etc.). \
-      Some of my works during this period: parspalayesh.com, robinaraia.com, sotudehbeton.com`,
+      website: "/projects",
+      description: `2 years & 4 months - As a freelance front-end
+      developer, I worked on several projects with several companies`,
+      tasks: [
+        "Sotudehbeton.ir Concrete plant website (HTML, CSS, Bootstrap, Vanilla JS, ES6+)",
+        "Guitarwsh.com Music academy blog (HTML, CSS, Bootstrap, Vanilla JS, ES6+, WordPress)",
+        "Robinaria.com Law firm reservation system (HTML, CSS, Bootstrap, Vanilla JS)",
+        "Parspalayesh.com Industrial company website (HTML, CSS, Bootstrap, jQuery, Vanilla JS)",
+        "Zirobamnews.com Music news agency (HTML, CSS, Bootstrap, Vanilla JS, WordPress)",
+        "Jibimarket.com E-commerce website (HTML, CSS, Bootstrap, Vanilla JS, OpenCart)",
+      ],
     },
   ]
 
@@ -114,10 +131,19 @@ export default function IndexPage() {
             </div>
             <div className="experience__details">
               <h3 className="experience__details-title bold">{item.title}</h3>
-              <h4 className="experience__details-company">{item.company}</h4>
+              <h4 className="experience__details-company">
+                <a target="_blank" rel="noopener noreferrer" href={item.website}>{item.company}</a>
+              </h4>
               <p className="experience__details-description">
                 {item.description}
               </p>
+              <ul className="experience__details-task-list">
+                {item.tasks.map(task => (
+                  <li key={task} className="experience__details-task">
+                    {task}
+                  </li>
+                ))}
+              </ul>
             </div>
           </li>
         ))}
@@ -137,12 +163,12 @@ export default function IndexPage() {
           </div>
           <div className="experience__details">
             <h3 className="experience__details-title bold">
-              Bachelor of Electrical Engineering
+              Bachelor of Science - Electrical Engineering
             </h3>
             <h4 className="experience__details-company">
-              University of Tehran
+              <a target="_blank" rel="noopener noreferrer" href="https://ut.ac.ir">University of Tehran</a>
             </h4>
-            <p className="experience__details-description">never done!</p>
+            <p className="experience__details-description"></p>
           </div>
         </li>
       </ul>
